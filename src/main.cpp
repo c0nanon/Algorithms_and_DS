@@ -9,7 +9,7 @@ int main()
 
     leList.appendNode(&nodeOne);
     leList.appendNode(&nodeTwo);
-    leList.appendNode(&nodeThree);
+    leList.pushFrontNode(&nodeThree);
 
     std::cout << leList[1] << '\n';
 }

@@ -28,6 +28,21 @@ void LinkedList::appendNode(Node* node)
 }
 
 
+void LinkedList::queueNode(Node* node)
+{
+    if (head)
+    {
+        node->next = head;
+        head = node;
+    }
+    else
+    {
+        head = node;
+        tail = node;
+    }
+}
+
+
 void LinkedList::traverseToIndex(int index)
 {
     for (int i{}; i < index; ++i)

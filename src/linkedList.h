@@ -15,6 +15,7 @@ public:
     Node* tail;
     LinkedList();
     void appendNode(Node* node);
+    void queueNode(Node* node);
     void traverseToIndex(int index);
     int operator[](int index);
 };
